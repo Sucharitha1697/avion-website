@@ -1,0 +1,108 @@
+body {
+  padding: 50px
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #d0e1e1;
+
+}
+.navbar-wrapper.navbar-fixed-top.navbar-inverse {
+   background-color: #5c8a8a;
+}
+.nav.navbar-nav.navbar-right li a {
+    color: black;
+}
+.nav.navbar-nav.navbar-right li a:hover {
+    color: white;
+   
+}
+
+a {
+  color: #00B7FF;
+}
+#main1
+{
+  background-color: #004d99;
+}
+#main2
+{
+  background-color: #a3c2c2; 
+   
+  color:#000000;
+  padding: 20px;
+   border-radius: 25px;
+}
+
+#main2 p
+{
+  font-family: arial;
+  font-size: 20px;
+}
+
+#main2 h3
+{
+  font-size: 25px;
+  padding: 
+}
+.bit
+{
+  font-family: arial;
+  font-size: 15px;
+}
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+.carousel-control { background: none !important; filter: none !important; progid:none !important; }
+.workshops
+{
+	font-size: 50px;
+}
+.image
+{
+	height: 350px;
+	width: 500px;
+}
+.text-muted
+{
+	font-size: 15px;
+}
+.heading
+{
+	font-size: 50px;
+}
+.footer
+{
+  background-color: #5c8a8a;
+  padding: 30px;
+}

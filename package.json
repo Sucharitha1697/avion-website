@@ -1,0 +1,30 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+     "start":"node app.js"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
+  },
+  "description": "avion website",
+  "main": "app.js",
+  "devDependencies": {},
+  "keywords": [
+    "hello"
+  ],
+    
+    "engines": {
+    "node": "6.10.3"
+  },
+  "author": "sucharitha",
+  "license": "ISC"
+}

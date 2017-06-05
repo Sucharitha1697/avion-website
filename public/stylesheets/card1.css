@@ -1,0 +1,64 @@
+.flex-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-row > [class*='col-'] {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row .thumbnail,
+.flex-row .caption {
+	flex-direction: column;
+	display: flex;
+	flex: 1 0 auto;
+	height: auto;
+	position: relative;
+}
+.flex-text {
+	flex-grow: 1;
+}
+.flex-row img {
+	min-width: 0;
+	width: 100%;
+}
+
+.flex-row  {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.image
+{
+  height: 250px;
+  width: 250px;
+}
+.image1
+{
+  height: 250px;
+  width: 250px;
+}
+
+/* 
+  Extra Small Devices, Phones { .col-xs-$ } 
+    ~ 480px to 767px ~
+
+  Extra Small Devices, Phones { .col-sm-$ } 
+    ~ 768px to 991px ~
+
+  Extra Small Devices, Phones { .col-md-$ } 
+    ~ 992 to 1200px ~
+
+  Extra Small Devices, Phones { .col-lg-$ } 
+    ~ 1201px up ~
+ */
+  
+/* Extra Media Query Below for Retina Iphones and Smaller */
+@media only screen and (max-width : 480px){
+  .flex-row > [class*='col-'] {
+      width: 100%;
+  }
+  .flex-row  {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
