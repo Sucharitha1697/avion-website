@@ -46,6 +46,7 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-http.listen(process.env.PORT||3000, function(){
+var a =process.env.PORT||3000;
+http.listen(a, function(){
   console.log('listening on *:3000');
 });
