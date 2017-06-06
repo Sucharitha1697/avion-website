@@ -4,9 +4,19 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var nodemailer = require("nodemailer");
+var smtpTransport = nodemailer.createTransport({
+    service: "gmail",
+    host: "smtp.gmail.com",
+    auth: {
+        user: "sucharithamickey@gmail.com",
+        pass: "JENSENackles"
+    }
+});
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var contact = require('./routes/contact');
 
 var app = express();
 var http = require('http').Server(app);
@@ -26,6 +36,25 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/team',index);
+app.use('/contact', contact);
+app.get('/send', function(req, res) {
+    var mailOptions = {
+        to: req.query.to,
+        subject: req.query.subject,
+        text: req.query.text
+    }
+    console.log(mailOptions);
+    smtpTransport.sendMail(mailOptions, function(error, response) {
+        if (error) {
+            console.log(error);
+            res.end("error");
+        } else {
+            console.log("Message sent: " + response.message);
+            res.end("sent");
+        }
+    });
+});
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -46,7 +75,7 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-var a =process.env.PORT||3000;
-http.listen(a, function(){
+
+http.listen(process.env.PORT||5000, function(){
   console.log('listening on *:3000');
 });
