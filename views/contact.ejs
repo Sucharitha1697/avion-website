@@ -11,7 +11,7 @@
                 subject = $("#subject").val();
                 text = $("#content").val();
                 $("#message").text("Sending E-mail...Please wait");
-                $.get("http://localhost:5000/send", {
+                $.get("/send", {
                     to: to,
                     subject: subject,
                     text: text
