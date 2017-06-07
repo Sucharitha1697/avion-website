@@ -14,17 +14,10 @@
 <script src="javascripts/wow.min.js"></script>
 <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 <link rel="stylesheet" type="text/css" href="stylesheets/card1.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/contact.css">
+<script src="javascripts/wow.js"></script>
+<script src="javascripts/contact.js"></script>
 
-
-
-<script >
-  
-
-    new WOW().init();
-  </script>
-<script >
- 
-</script>
   </head>
  
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -53,12 +46,12 @@
 	        <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li ><a href="/"><h3 ><span class="glyphicon glyphicon-home"></span> Home</h3></a></li>
-             <li ><a href="/users"><h3 ><span class="glyphicon glyphicon-star"></span> Tutorials</h3></a></li>
+             <li ><a href="/workshops"><h3 ><span class="glyphicon glyphicon-star"></span> Workshops</h3></a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><h3 ><span class="glyphicon glyphicon-user"></span> About Us<b class="caret"></b></h3></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Worskshops</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="/team">Team</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
                 </ul>
               </li>
                <li><a href="#"><h3 ><span class="glyphicon glyphicon-question-sign"></span>F.A.Q</h3></a></li>
@@ -73,7 +66,7 @@
 
 <div class="container" >
 <div class="row"> 
-<div class="col-lg-8">
+<div class="col-lg-12">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -84,15 +77,15 @@
 
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="images/avion.jpg" style="width: 1200px" alt="New York">
+      <img src="images/avion.jpg" style="width: 1500px" alt="New York">
       
     </div>
 
     <div class="item">
-      <img src="images/avion.jpg" style="width: 1200px" alt="Chicago">
+      <img src="images/avion.jpg" style="width: 1500px" alt="Chicago">
       </div>
     <div class="item">
-      <img src="images/avion.jpg" style="width: 1200px" alt="Chicago">
+      <img src="images/avion.jpg" style="width: 1500px" alt="Chicago">
       
         
     </div>
@@ -114,24 +107,11 @@
   </a>
 </div>
 </div>
-<div class="col lg-4  bit">
-    <div class="head">
-      <h1>Panda</H1>
-    </div>
-    <br><br>
-      <div class="divider"></div>
-      <p>
-        The heart is a muscular organ in humans and other animals, which pumps blood through the blood vessels of the circulatory system.[1] Blood provides the body with oxygen and nutrients, as well as assists in the removal of metabolic wastes.[2] In humans, the heart is located between the lungs, in the middle compartment of the chest.[3]
 
-In humans, other mammals, and birds, the heart is divided into four chambers: upper left and right atria; and lower left and right ventricles.[4][5] Commonly the right atrium and ventricle are referred together as the right heart and their left counterparts as the left heart.[6] Fish, in contrast, have two chambers, an atrium and a ventricle, while reptiles have three chambers.[5] In a healthy heart blood flows one way through the heart due to heart valves, which prevent backflow.[3] The heart is enclosed in a protective sac, the pericardium, which also contains a small amount of fluid. The wall of the heart is made up of three layers: epicardium, myocardium, and endocardium.[7]
-
-
-      </p>
-  </div>
 </div>
 
 </div>
-</div>
+
 <br><br><br>
 <div class="container center  wow animated fadeInUp"  >
 <div class="   row">
@@ -240,38 +220,19 @@ In humans, other mammals, and birds, the heart is divided into four chambers: up
 </div>
 <!-- /.container  -->
 
+<div class="container">
+
+  <h1>workshop slides</h1>
+  <button type="button" class="btn btn-lg btn-primary btn-block">Download</button>
+</div>
+
 
   <!--Contact Starts-->
   <br>
   <br>
-  <div class="container center">
   
- 
 
-  <div class="row wow animated fadeInLeftBig center">      
-      <center>
-        <h2 class="text-center">Contact Us On</h2>
-        <br>
-        <div class="btn-group">
-          <a href="" class="btn-lg btn-primary" role="button"><i class="fa fa-facebook"></i> Facebook</a>
-          <br><br><br>
-          <button title=" mail" class="btn-lg btn-success"><i class="fa fa-envelope"></i> Gmail</button>
-        </div>
-     
-      <br>
-      <br>
-     
-      <br>
-      <h2> Or Call at </h2>
-      <h4><i class="fa fa-phone"></i>panda : 000000999999 </h4>
-      <h4><i class="fa fa-phone"></i>pikachu  :  000000999999 </h4>
-   </center>
- </div>
-
-  </div>
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><
 
 
 
@@ -309,7 +270,88 @@ In humans, other mammals, and birds, the heart is divided into four chambers: up
     </div>
   </div>
 </div>
-<br><br><br><br>
+<br><br><br>
+<div id="contact">
+<div style="background-image:url(images/contact.jpg); height:600px"  >
+<br>
+<h1 style="text-align: center ;color:white">Connect with us</h1>
+<section   class="contact">
+        <div class="container">
+        <div class="row">
+        <div class="col-md-4">
+        
+        <fieldset>
+        <input id="to" class="form form-control"  type="text" placeholder="Enter ur E-mail ID " />
+        <br>
+        <input id="subject" class="form form-control" type="text" placeholder="Write Subject" />
+        <br>
+        <textarea id="content" class="form form-control"  cols="40" rows="5" placeholder="Write what you want to send"></textarea>
+        <br>
+        
+         </fieldset>
+        <button id="send_email" type="button" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#myModal">
+        <i class="fa fa-paper-plane-o">send</i></button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Successfully sent</h4>
+        </div>
+        <div id="message" class="modal-body">
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+       
+       
+        
+    </div>
+    <div class="col-md-2">
+    <i  class="fa fa-facebook" style="font-size: "><a href="#">  </a></i>
+    </div>
+
+    <div class ="col-md-6 ">
+                        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14644.764539471633!2d85.44131074733225!3d23.41746172916616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4fb53f0c27be7%3A0x66180c1cf3c5e704!2sBirla+Institute+of+Technology!5e0!3m2!1sen!2s!4v1394261218206"  width=600 height =275 frameborder="0" style="border:0"></iframe>
+        
+                    </div>
+
+    </div>
+    <br><br>
+   
+    </div>
+     <div class="container center">
+  <div class="row wow animated fadeInUp center">      
+      <center>
+        
+        <br>
+        <div class="btn-group">
+          <button class="btn-lg btn-primary" role="button"><i class="fa fa-facebook">   Facebook </i>
+          </button>
+     
+      <br>
+      <br>
+     <h4 style="color: white"><i class="fa fa-phone"></i>panda : 000000999999 </h4>
+      <h4 style="color: white"><i class="fa fa-phone"></i>pikachu  :  000000999999 </h4>
+   </center>
+ </div>
+
+  </div>
+    </section>
+</div>
+</div>
+
 <div class="footer text-center spacer">
 
   <p class="wowload flipInX"><a href=""><i class="fa fa-facebook fa-2x"></i></a> <a title="" href="#"><i class="fa fa-envelope fa-2x"></i></a>  </p>
@@ -320,18 +362,8 @@ In humans, other mammals, and birds, the heart is divided into four chambers: up
 
 
 
-<script >
-wow = new WOW(
-                      {
-                      boxClass:     'wow',      // default
-                      animateClass: 'animated', // default
-                      offset:       0,          // default
-                      mobile:       true,       // default
-                      live:         true        // default
-                    }
-                    )
-                    wow.init();
-</script>
+
+
 <script type="text/javascript">
   
   $('.multi-item-carousel').carousel({

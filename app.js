@@ -4,22 +4,27 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+
+var app = express();
+var http = require('http').Server(app);
+
 var nodemailer = require("nodemailer");
 var smtpTransport = nodemailer.createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
     auth: {
-        user: "sucharithamickey@gmail.com",
-        pass: "JENSENackles"
+        user: "avionbitmesra@gmail.com",
+        pass: "avion@mesra"
     }
 });
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 var contact = require('./routes/contact');
+var workshops = require('./routes/workshops');
+var team = require('./routes/team');
 
-var app = express();
-var http = require('http').Server(app);
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -35,8 +40,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/team',index);
+app.use('/workshops', workshops);
+
 app.use('/contact', contact);
+app.use('/team', team);
 app.get('/send', function(req, res) {
     var mailOptions = {
         to: req.query.to,
