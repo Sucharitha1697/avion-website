@@ -76,3 +76,33 @@
   margin-bottom: 15px;
   border: 2px solid #fff;
 }
+.other
+{
+  color: #ffffff;
+}
+.other p
+{
+  font-size: 18px;
+  padding:5px;
+}
+.pika
+{
+  font-size: 100px;
+}
+
+.try 
+{
+ color: white;
+}
+.try p
+{
+color: white;
+font-size: 20px;
+text-align: center;
+
+}
+.try h2
+{
+color: white;
+text-align: center;
+}

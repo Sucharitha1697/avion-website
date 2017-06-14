@@ -6,6 +6,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 
     
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -13,53 +14,186 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="javascripts/wow.min.js"></script>
-
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/card1.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/contact.css">
 <script src="javascripts/wow.js"></script>
+<script src="javascripts/contact.js"></script>
     <title>Node.JS Email application</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            var from, to, subject, text;
-            $("#send_email").click(function() {
-                to = "avionbitmesra@gmail.com";
-                subject = $("#subject").val();
-                text = $("#content").val();
-                $("#message").text("Sending E-mail...Please wait");
-                $.get("/send", {
-                    to: to,
-                    subject: subject,
-                    text: text
-                }, function(data) {
-                    if (data == "sent") {
-                        $("#message").empty().html(
-                            "Email has been sent at " + to + ".Please check inbox! ");
-                    }
-
-                });
-            });
-        });
-    </script>
+   
 </head>
 
-<body>
-    <div class="container">
+<body style="background-image:url(images/contact.jpg);background-repeat: no-repeat;" >
+ <div class="topbar animated fadeInLeftBig"></div>
+<nav class="navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
+      <div class="container">
+          <div class="navbar-header">
+          <a class="navbar-brand" href="/index" ><h1 style="color:#85adad ">AVION</h1></a>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+          </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li ><a href="/"><h3 ><span class="glyphicon glyphicon-home"></span> Home</h3></a></li>
+               <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><h3 ><span class="glyphicon glyphicon-star"></span >Workshop<b class="caret"></b></h3></a>
+                <ul class="dropdown-menu">
+                  <li ><a href="/workshops">Workshops</a></li>
+                  <li ><a href="/material">Material</a></li>
+                  <li ><a href="/learning">Learning</a></li>
+                </ul>
+              </li>s
+               <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><h3 ><span class="glyphicon glyphicon-user"></span > About Us<b class="caret"></b></h3></a>
+                <ul class="dropdown-menu">
+                  <li ><a href="/team">Team</a></li>
+                  <li ><a href="/Alumni">Alumni</a></li>
+                  <li ><a href="/contact">Contact Us</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+            
+            
+          </div>
+         </div>
+         </div>
+</nav>
+<br><br><br><br>
+ 
+ 
+   
+
+<h1 style="text-align: center ;color:white">Connect with us</h1>
+<div   class="contact">
+        <div class="container">
         <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-1">
+          
+        </div>
+        <div class="col-md-4">
+        
         <fieldset>
-        <input id="to" type="text" placeholder=" E-mail ID where you want to send" />
-        <br><br>
-        <input id="subject" type="text" placeholder="Write Subject" />
-        <br><br>
-        <textarea id="content" cols="40" rows="5" placeholder="Write what you want to send"></textarea>
-        <br><br>
-        <button id="send_email" class=" btn btn-lg btn-primary">Send Email</button>
-        </fieldset>
-        <span id="message"></span>
+        <input id="to" class="form form-control"  type="text" placeholder="Enter ur E-mail ID " />
+        <br>
+        <input id="subject" class="form form-control" type="text" placeholder="Write Subject" />
+        <br>
+        <textarea id="content" class="form form-control"  cols="40" rows="5" placeholder="Write what you want to send"></textarea>
+        <br>
+        
+         </fieldset>
+        <button id="send_email" type="button" class="btn btn-success btn-block btn-lg" data-toggle="modal" data-target="#myModal">
+       <i class="fa fa-paper-plane-o pika">send</i></button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Successfully sent</h4>
+        </div>
+        <div id="message" class="modal-body">
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
     </div>
+  </div>
+  
+       
+       
+        
     </div>
-    </div>
+    
+    <div class="col-md-1">
+
+      </div>
     
 
-    
+    <div class ="col-md-6 ">
+                        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14644.764539471633!2d85.44131074733225!3d23.41746172916616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4fb53f0c27be7%3A0x66180c1cf3c5e704!2sBirla+Institute+of+Technology!5e0!3m2!1sen!2s!4v1394261218206"  width=500 height =275 frameborder="0" style="border:0"></iframe>
+        
+    </div>
+
+    </div>
+   
+</div>
+
+<div class="container try">
+  <div class="  row  " style="color: black">
+    <div class=" col-lg-4 animated wow bounceInLeft ">
+        
+        
+          
+          <h2><strong>Aslesh Penishetty</strong></h2>
+        <p > <i class="fa fa-phone"></i>8210683357</p>
+         <p><i class="fa fa-envelope"></i>sree.aslesh@gmail.com</p>
+          </p>
+         
+       
+       
+     
+      </div>
+
+       <div class=" col-lg-4 animated wow tada ">
+       <h2><strong>Shivam Priya</strong></h2>
+        <p><i class="fa fa-phone"></i>8292359023</p>
+         <p><i class="fa fa-envelope"></i>shivam.teamavion91@gmail.com</p>
+
+       </div>
+       <div class=" col-lg-4 animated wow bounceInRight ">
+       <h2><strong>Srivatsa Sinha</strong></h2>
+        <p><i class="fa fa-phone fa-x"></i>9955959684</p>
+         <p><i class="fa fa-envelope fa-x"></i>srivatsasinha@gmail.com</p>
+       </div>
+       </div>
+       </div>
+
+       <br><br><br><br><br>
+       <div class="container try">
+  <div class="  row  " >
+    <div class=" col-lg-4 animated wow bounceInLeft ">
+        
+        
+          
+          <h2><strong>Pujitha Patnaik</strong></h2>
+        <p><i class="fa fa-envelope "></i>pujithapatnaik1997@gmail.com</p>
+         
+       
+       
+     
+      </div>
+
+       <div class=" col-lg-4 animated wow tada ">
+        <h2><strong>Vinay Ladwal</strong></h2>
+        <p><i class="fa fa-phone"></i>7870410954</p>
+         <p><i class="fa fa-envelope"></i>vinaykumar3096@gmail.com</p>
+
+       </div>
+       <div class=" col-lg-4 animated wow bounceInRight ">
+       <h2><strong>Sakshi Agarwal</strong></h2>
+        
+         <p><i class="fa fa-envelope"></i>sakshi.agarwal1221@gmail.com</p>
+       </div>
+       </div>
+       </div>
+   
+   </div>
+   
+
+
 </body>
 </html>

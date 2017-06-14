@@ -23,6 +23,9 @@ var users = require('./routes/users');
 var contact = require('./routes/contact');
 var workshops = require('./routes/workshops');
 var team = require('./routes/team');
+var learning = require('./routes/learning');
+var material = require('./routes/material');
+var alumni= require('./routes/alumni');
 
 
 
@@ -41,9 +44,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/workshops', workshops);
-
 app.use('/contact', contact);
 app.use('/team', team);
+app.use('/workshops', workshops);
+app.use('/alumni', alumni);
+app.use('/learning', learning);
+app.use('/material', material);
+
 app.get('/send', function(req, res) {
     var mailOptions = {
         to: req.query.to,

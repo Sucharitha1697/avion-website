@@ -1,18 +1,25 @@
 body {
   padding: 50px
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-    background-color: #d0e1e1;
+    
 
 }
 .navbar-wrapper.navbar-fixed-top.navbar-inverse {
-   background-color: #5c8a8a;
+  
 }
 .nav.navbar-nav.navbar-right li a {
-    color: black;
+    color: #85adad;
 }
 .nav.navbar-nav.navbar-right li a:hover {
-    color: white;
-   
+    
+   background-color: black;
+}
+  .dropdown-menu li
+{
+ 
+ 
+    color: black;
+  
 }
 
 a {
@@ -24,7 +31,7 @@ a {
 }
 #main2
 {
-  background-color: #a3c2c2; 
+  
    
   color:#000000;
   padding: 20px;
@@ -105,4 +112,8 @@ a {
 {
   background-color: #5c8a8a;
   padding: 30px;
+}
+#aslesh
+{
+  background-image: url(images/aslesh.jpg);
 }
