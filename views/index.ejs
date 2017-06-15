@@ -23,16 +23,18 @@
    <nav class="navbar-wrapper navbar-inverse navbar-fixed-top" role="navigation" id="navbar">
       <div class="container">
       	  <div class="navbar-header">
-          <a class="navbar-brand" href="/index" ><h1 style="color:#85adad ">AVION</h1></a>
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar">
 								<span class="sr-only">Toggle navigation</span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 								<span class="icon-bar"></span>
 							</button>
+               <a class="navbar-brand" href="/index" >AVION</a>
           </div>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-	        <div class="collapse navbar-collapse">
+         
+            <div class="collapse navbar-collapse navbar-ex1-collapse" id="mynavbar">
+	        
             <ul class="nav navbar-nav navbar-right">
               <li ><a href="/"><h3 ><span class="glyphicon glyphicon-home"></span> Home</h3></a></li>
                <li class="dropdown">
@@ -55,7 +57,7 @@
             </ul>
             
             
-          </div>
+         
 				 </div>
 				 </div>
 </nav>
@@ -64,12 +66,7 @@
 
 <div class="container" >
 <div class="row"> 
-<div class="col-lg-4">
-<h1 style="font-size: 90px"><r><br>TEAM <br>AVION</h1>
-  
-</div>
-
-<div class="col-lg-8 col-xs-12 col-sm-8">
+<div class= col-xs-12 ">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -100,11 +97,47 @@
 </div>
 </div>
 
+<br><br>
+<div class="container-fluid">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <div class="masthead">
+      
+        <nav>
+        <div class="nav nav-justified">
+          <ul class="nav nav-justified">
+           <li class=""><a href="/"><span class="glyphicon glyphicon-home"></span><strong>Home</strong></a></li>
+               <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-star"></span ><strong>Learning
+                </strong><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li ><a href="/workshops">Workshops</a></li>
+                  <li ><a href="/material">Material</a></li>
+                  <li ><a href="/learning">Learning</a></li>
+                </ul>
+              </li>
+               <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span > <strong>About Us
+                </strong><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li ><a href="/team">Team</a></li>
+                  <li ><a href="/Alumni">Alumni</a></li>
+                  <li ><a href="/contact">Contact Us</a></li>
+                </ul>
+              </li>
+            
+            
+          </ul>
+          </div>
+        </nav>
+      </div>
+
 <br><br><br>
 
 <div class="container center  wow animated fadeInUp"  >
 <div class="row">
- <div class="col-sm-6 center" >
+ <div class="col-xs-12 col-sm-6 center" >
 <div id="main2">
  <h2><i class="fa fa-group"></i> About the team</h2>
  <br><br>
@@ -119,10 +152,10 @@ attain the impossible"</strong><br> is what brings us together for the love of r
 through the creative and practical method of learning so as to contribute to the practical
 approaches to the day to day applications.
 
- <a  role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+ <a  role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapseExample">
             <i>Read more</i>
           </a>
-<div class="collapse" id="collapseExample1">
+<div class="collapse" id="collapse2">
            <div >
             <p>
               We participate in technical events at a national level in IIT Bombay(techfest),iit
@@ -142,7 +175,7 @@ practical experience.
  </p>    
  </div>
 </div>
-<div class="col-sm-6 center" >
+<div class="col-xs-12 col-sm-6 center" >
 <div id="main2">
  <h2><span class="glyphicon glyphicon-th-list"></span> Objectives</h2>
  <br><br>
@@ -157,10 +190,10 @@ attain the impossible" is what brings us together for the love of robotics and m
 through the creative and practical method of learning so as to contribute to the practical
 approaches to the day to day applications.
 
- <a  role="button" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+ <a  role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapseExample">
             <i>Read more</i>
           </a>
-<div class="collapse" id="collapseExample1">
+<div class="collapse" id="collapse1">
            <div >
             <p>
               We participate in technical events at a national level in IIT Bombay(techfest),iit
@@ -198,7 +231,7 @@ practical experience.
 
          <div class="container">
          <div class="row text-center">
-         <div class="col-md-6 ">
+         <div class="col-xs-6 ">
          <div class="animated wow zoomIn" data-wow-duration="1s" data-wow-offset="100">
                   <div class="animated wow tada" data-wow-delay="1s" data-wow-duration="1s">
                     <div class="animated wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s">
@@ -211,7 +244,7 @@ practical experience.
          <br>
          <h1>ML</h1>
          </div>
-         <div class="col-md-6">
+         <div class="col-xs-6">
           <div class="animated wow zoomIn" data-wow-duration="1s" data-wow-offset="100">
                   <div class="animated wow tada" data-wow-delay="1s" data-wow-duration="1s">
                     <div class="animated wow rubberBand" data-wow-delay="2000ms" data-wow-duration="1s">
@@ -238,7 +271,7 @@ practical experience.
 
 <div class="container">
   <div class="flex-row row ">
-    <div class=" col-lg-6 animated wow bounceInLeft ">
+    <div class=" col-xs-12 col-md-6 animated wow bounceInLeft ">
         <div class="thumbnail">
       <img src="images/machine.jpg" class="image img-responsive" style="height: 350px"  alt="machine learning"></img>
                         <h3 class="heading text-center">ML</h3>
@@ -253,7 +286,7 @@ practical experience.
       </div>
 
 
-    <div class=" col-lg-6 animated wow bounceInRight">
+    <div class=" col-xs-12 col-md-6 animated wow bounceInRight">
       <div class="thumbnail">
        <img src="images/wama.jpg" class="image img-responsive" style="height: 350px" alt="WORKSHOP ON ADVANCED MICROCONTROLLER AND APPLICATIONS"></img>
                         <h3 class="heading text-center">WAMA</h3>
@@ -285,31 +318,46 @@ practical experience.
 <br><br><br><br><br><br>
 
 <div class="container" style="border-radius: 25px">
- <h1>Image gallery</h1>
+ <h1 class="text-center">Image gallery</h1>
+ <br><br><br>
+  <div class="container gallery">
+      <div id="carousel">
+     <figure><a href="/workshops"><img src="images/wk/8.jpg" style="width: 200px;height: 150px" alt=""></a></figure>
+       <figure><a href="/workshops"><img src="images/wk/2.jpg" style="width: 200px;height: 150px" alt=""></a></figure>
+       <figure><a href="/workshops"><img src="images/wk/3.jpg" style="width: 200px;height: 150px" alt=""></a></figure>
+       <figure><a href="/workshops"><img src="images/wk/5.jpg" style="width: 200px;height: 150px" alt=""></a></figure>
+       <figure><a href="/workshops"><img src="images/wk/11.jpg" style="width: 200px;height: 150px" alt=""></a></figure>
+       <figure><a href="/workshops"><img src="images/wk/7.jpg" style="width: 200px;height: 150px" alt=""></a></figure>
+       <figure><a href="/workshops"><img src="images/wk/9.jpg" style="width: 200px;height: 150px" alt=""></a></figure>
+       <figure><a href="/workshops"><img src="images/wk/16.jpg" style="width: 200px;height: 150px" alt=""></a></figure>
+      <figure>  <a href="/workshops"><img src="images/wk/6.jpg" style="width: 200px;height: 150px" alt=""></a></figure>
 
- <br><br>
+    </div>
+  </div>
+
+ <br><br><br><br>
   <div class="row">
     <div class="col-md-12">
       <div class="carousel slide multi-item-carousel" id="theCarousel">
         <div class="carousel-inner">
           
           <div class="item active">
-            <div class="col-md-4"><a href="/workshops"><img src="images/wk/5.jpg"  class=" img-responsive"></a></div>
+            <div class=" col-xs-12 col-sm-6 col-md-4"><a href="/workshops"><img src="images/wk/5.jpg"  class=" img-responsive"></a></div>
           </div>
           <div class="item">
-            <div class="col-md-4"><a href="#1"><img src="images/wk/7.jpg" class="img-responsive"></a></div>
+            <div class="  col-xs-12 col-sm-6 col-md-4"><a href="#1"><img src="images/wk/7.jpg" class="img-responsive"></a></div>
           </div>
           <div class="item ">
-            <div class="col-md-4"><a href="#1"><img src="images/wk/8.jpg" class=" img-responsive"></a></div>
+            <div class=" col-xs-12 col-sm-6  col-md-4"><a href="#1"><img src="images/wk/8.jpg" class=" img-responsive"></a></div>
           </div>
           <div class="item">
-            <div class="col-md-4"><a href="#1"><img src="images/wk/9.jpg" class="img-responsive"></a></div>
+            <div class=" col-xs-12 col-sm-6 col-md-4"><a href="#1"><img src="images/wk/9.jpg" class="img-responsive"></a></div>
           </div>
           <div class="item">
-            <div class="col-md-4"><a href="#1"><img src="images/wk/2.jpg" class="img-responsive"></a></div>
+            <div class=" col-xs-12 col-sm-6  col-md-4"><a href="#1"><img src="images/wk/2.jpg" class="img-responsive"></a></div>
           </div>
           <div class="item">
-            <div class="col-md-4"><a href="#1"><img src="images/wk/3.jpg" class="img-responsive"></a></div>
+            <div class=" col-xs-12 col-sm-6 col-md-4"><a href="#1"><img src="images/wk/3.jpg" class="img-responsive"></a></div>
           </div>
         </div>
         <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
@@ -322,23 +370,29 @@ practical experience.
        
 <br><br><br>
 <div id="contact">
-<div style="background-image:url(images/contact.jpg); height:600px"  >
-<br>
-<h1 style="text-align: center ;color:white">Connect with us</h1>
-<section   class="contact">
+
+<h1 style="text-align: center ;color:black">Connect with us</h1>
+<br><br>
         <div class="container">
         <div class="row">
-        <div class="col-md-1">
-          
+        <div class="col-xs-1"></div>
+        <div class="col-xs-4">
+        <br><br>
+          <p><span class="glyphicon glyphicon-map-marker"></span>Jharkhand, India</p>
+          <p><span class="glyphicon glyphicon-phone"></span>Phone:</p>
+          <p><span class="glyphicon glyphicon-envelope"></span>Email:avionbitmesra@gmail.com </p> 
+          <p><a href="#"><span class="fa fa-facebook"></span>facebook:team avion</a></p> 
+          <p>For more details<a href="/contact"><button class="btn btn-success btn-md">click here</button></a></p>
         </div>
-        <div class="col-md-4">
+            <div class="col-xs-1"></div>
+        <div class="col-xs-6">
         
         <fieldset>
         <input id="to" class="form form-control"  type="text" placeholder="Enter ur E-mail ID " />
         <br>
         <input id="subject" class="form form-control" type="text" placeholder="Write Subject" />
         <br>
-        <textarea id="content" class="form form-control"  cols="40" rows="5" placeholder="Write what you want to send"></textarea>
+        <textarea id="content" class="form form-control"  cols="40" rows="7" placeholder="Write what you want to send"></textarea>
         <br>
         
          </fieldset>
@@ -365,33 +419,13 @@ practical experience.
       
     </div>
   </div>
-  
-       
-       
-        
-    </div>
-    
-    <div class="col-md-1">
-
-      </div>
-    
-
-    <div class ="col-md-6 ">
-                        
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14644.764539471633!2d85.44131074733225!3d23.41746172916616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4fb53f0c27be7%3A0x66180c1cf3c5e704!2sBirla+Institute+of+Technology!5e0!3m2!1sen!2s!4v1394261218206"  width=500 height =275 frameborder="0" style="border:0"></iframe>
-        
-                    </div>
-
-    </div>
-    <br><br>
-   
-    </div>
-   
-      <h2 style="text-align: center;font-size: 25px;color: white">For more details
-      <a href="/contact"><button class="btn btn-success btn-md">click here</button></a>
-      </h2>
-    
-     </section>
+  </div>
+ </div>
+ </div>
+ </div>
+   <br><br><br>
+<div id="googleMap"></div>
+</div>
  </div>
 </div>
 
@@ -403,9 +437,31 @@ practical experience.
 </div>
 
 
+<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+                
+        <div class="col-sm-4">
+         
+        </div>
+        <div class="col-sm-4">
+          
+        </div>
+      </div>
+    </div>
 
 
 
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(23.4122599,85.4399411);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:true, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5uqvtOdmbT9Dmov5iM3sxhOKXscbwv3k&callback=myMap"></script> 
 
 <script type="text/javascript">
   

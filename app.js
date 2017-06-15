@@ -26,7 +26,7 @@ var team = require('./routes/team');
 var learning = require('./routes/learning');
 var material = require('./routes/material');
 var alumni= require('./routes/alumni');
-
+var trop= require('./routes/trop');
 
 
 // view engine setup
@@ -50,6 +50,7 @@ app.use('/workshops', workshops);
 app.use('/alumni', alumni);
 app.use('/learning', learning);
 app.use('/material', material);
+app.use('/trop', trop);
 
 app.get('/send', function(req, res) {
     var mailOptions = {
