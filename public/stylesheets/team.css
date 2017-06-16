@@ -5,7 +5,7 @@
 	font-size: 35px;
 }
 body {
-	background: #f6f9fa;
+	
 	color: #536d76;
 	font-weight: 400;
 	font-size: 1em;
@@ -201,13 +201,23 @@ figure.effect:hover p {
 
 	.grid figure {
 		width: 100%;
+		margin-bottom: 30px;
 	}
-	.grid figure img 
+	.grid figure figcaption {
+		font-size: 120%;
+	}
+	
 	
 }
 
 h2{
-	font-size: 50px;
+	font-size: 80px;
 	font-family: Brush Script MT;
 	
+}
+h1
+{
+	font-family: lucida;
+	font-size: 60px;
+	font-style: italic;
 }

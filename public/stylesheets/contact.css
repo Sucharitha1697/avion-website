@@ -103,3 +103,20 @@ text-align: center;
 color: white;
 text-align: center;
 }
+
+@media screen and (max-width: 41.5em) {
+
+  #main
+  {
+   background-image:url(images/contact.jpg);
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+  }
+  .map iframe
+  {
+    width:375px;
+    margin-top: 20px;
+  }
+
+  
+}
