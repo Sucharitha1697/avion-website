@@ -23,3 +23,15 @@
 {
 	margin-right:20px;
 }
+
+@media screen and (max-width: 41.5em) 
+{
+.proj i
+{
+	margin-right:5px;
+}
+.proj li
+{
+	font-size: 18px;
+}
+}

@@ -1,11 +1,17 @@
 body {
   padding: 50px
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-    background-color:#DFE2DBp;
+    background-color:#e3f4f1;
     
    
 
 }
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+    color: black;
+}
+
+
 #info p
 {
   color: #191919p;
@@ -16,25 +22,20 @@ body {
  text-align: center;
 }
 .navbar-wrapper.navbar-fixed-top.navbar-inverse {
-   background-color: #191919;
+   background-color: #0a3e49;
  
   
 }
 .nav.navbar-nav.navbar-right li a {
-  color:#FFE658;
+  color:#fff;
 }
 .nav.navbar-nav.navbar-right li a:hover {
-     background-color:#004d80;
+     background-color:#a9a989;
   
-  color:#b3e0ff;
+  color:#fff;
 }
   .dropdown-menu li
-{
- 
- 
-    color: black;
-  
-}
+
 
 a {
   color: #00B7FF;
@@ -57,7 +58,10 @@ a {
   font-family: arial;
   font-size: 20px;
 }
-
+.footer
+{
+  background-color:;
+}
 #main2 h2
 {
   font-size: 40px;
@@ -124,7 +128,7 @@ a {
 }
 .footer
 {
-  background-color: #5c8a8a;
+  background-color:#0a3e49;
   padding: 30px;
 }
 #aslesh
@@ -320,23 +324,23 @@ img:hover{
 
  #main2 h2
  {
-  font-size: 35px;
+  font-size: 25px;
  }
  #main2 p
  {
-  font-size: 18px;
+  font-size: 17px;
  }
  .new
  {
-  font-size: 20px;
+  font-size: 17px;
  }
   
   #contact h1
   {
-    font-size: 55px;
+    font-size: 50px;
   }
   .small
   {
-    font-size: 65px;
+    font-size: 50px;
   }
 }
