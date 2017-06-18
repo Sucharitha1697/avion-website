@@ -1,17 +1,22 @@
 body {
   padding: 50px
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-    background-color: #B71427;
+    background-color:#DFE2DBp;
     
    
 
 }
-.info p
+#info p
 {
-  color:#FFE658;
+  color: #191919p;
+}
+#info a
+{
+  font-size: 25px;
+ text-align: center;
 }
 .navbar-wrapper.navbar-fixed-top.navbar-inverse {
-   background-color: #404040;
+   background-color: #191919;
  
   
 }
@@ -53,9 +58,9 @@ a {
   font-size: 20px;
 }
 
-#main2 h3
+#main2 h2
 {
-  font-size: 25px;
+  font-size: 40px;
   padding: 
 }
 .bit
@@ -255,6 +260,7 @@ img:hover{
     padding-right: 0;
     padding-left: 0;
   }
+
 }
 #contact p
 {
@@ -301,4 +307,36 @@ img:hover{
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+#contact h1
+{
+  font-size: 80px;
+}
+.small
+{
+  font-size: 80px;
+}
+@media screen and (max-width: 41.5em) {
+
+ #main2 h2
+ {
+  font-size: 35px;
+ }
+ #main2 p
+ {
+  font-size: 18px;
+ }
+ .new
+ {
+  font-size: 20px;
+ }
+  
+  #contact h1
+  {
+    font-size: 55px;
+  }
+  .small
+  {
+    font-size: 65px;
+  }
 }

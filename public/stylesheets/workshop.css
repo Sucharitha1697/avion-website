@@ -21,3 +21,24 @@
 	.carousel-inner .next        { left:  25%; }
 	.carousel-inner .prev		 { left: -25%; }	
 }
+
+.container p
+{
+	font-size: 25px;
+}
+.container h2
+{
+	font-size: 50px;
+}
+
+@media screen and (max-width: 41.5em) 
+{
+.container p
+{
+	font-size: 20px;
+}
+.container h2
+{
+	font-size: 40px;
+}
+}
