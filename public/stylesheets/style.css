@@ -7,9 +7,7 @@ body {
 
 }
 
-.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
-    color: black;
-}
+
 
 
 #info p
@@ -28,6 +26,9 @@ body {
 }
 .nav.navbar-nav.navbar-right li a {
   color:#fff;
+}
+.dropdown-menu li a {
+  color:#000 !important;
 }
 .nav.navbar-nav.navbar-right li a:hover {
      background-color:#a9a989;
