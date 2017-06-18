@@ -1,18 +1,27 @@
 body {
   padding: 50px
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: #B71427;
     
+   
 
 }
+.info p
+{
+  color:#FFE658;
+}
 .navbar-wrapper.navbar-fixed-top.navbar-inverse {
+   background-color: #404040;
+ 
   
 }
 .nav.navbar-nav.navbar-right li a {
-    color: #85adad;
+  color:#FFE658;
 }
 .nav.navbar-nav.navbar-right li a:hover {
-    
-   background-color: black;
+     background-color:#004d80;
+  
+  color:#b3e0ff;
 }
   .dropdown-menu li
 {
